@@ -1,5 +1,7 @@
-source "https://rubygems.org"
+ruby '2.3.1'
 
-gem "test-kitchen"
-gem "kitchen-ec2"
-gem "inspec"
+source 'https://rubygems.org/' do
+    gem 'inspec'
+    gem 'kitchen-ec2'
+    gem 'kitchen-inspec'
+end

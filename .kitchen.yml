@@ -13,7 +13,7 @@ transport:
 platforms:
   - name: ubuntu-14.04 
     driver:
-      image_id: ami-0085f11818f401bdf
+      image_id: ami-0d9c2893a43ede4d8
       instance_type: t2.micro
 
 verifier:
