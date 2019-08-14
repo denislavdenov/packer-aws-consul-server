@@ -14,7 +14,7 @@ export AWS_SECRET_ACCESS_KEY=MYSECRETACCESSKEY
 
 **Execute below build command**
 
-`packer build -var'CONSUL_VER=X.X.X' createaminginx.json`
+`packer build -var 'CONSUL_VER=X.X.X' createconsul.json`
 
 
 ## After AMI is created

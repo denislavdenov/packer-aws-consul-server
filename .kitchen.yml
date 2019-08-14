@@ -1,23 +1,22 @@
 ---
 driver:
   name: ec2
-  aws_ssh_key_id: denislav
-  security_group_ids: ["sg-07bb5a6cfdc5f24aa"]
-  region: us-east-1
-  associate_public_ip: true
+  instance_type: t2.micro
 
 transport:
-  ssh_key: "~/.ssh/id_rsa" 
   username: ubuntu
 
+provisioner:
+  name: shell
+
 platforms:
-  - name: ubuntu-14.04 
-    driver:
-      image_id: ami-0d9c2893a43ede4d8
-      instance_type: t2.micro
+  - name: ubuntu
+    driver: 
+      image_id: ami-08841e3ee41f558b6
+      region: us-east-1
 
 verifier:
   name: inspec
 
 suites:
-  - name: default
+- name: default
